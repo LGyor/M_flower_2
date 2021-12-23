@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: cornsilk;	
+  font-family: 'Roboto Slab', serif;
+
+}
+
+/* --------------------- HEADER --------------------- */
+
+header{
+  max-width: 1250px;
+  height: 100vh;
+  position: relative; 
+  margin: 0 auto 0 auto;
+  background: url('assets/bg_moon_flower_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  border: 1px solid #200a00;
+}
+
+.mix-blend{
+  width: 80%;	
+  margin: 22% auto 0 auto;
+  font-size: 4.8rem;  
+  text-align: center;
+  letter-spacing: 0.4rem;
+
+  text-shadow:
+   -1px -1px 20px LightYellow,  
+    1px -1px 20px LightYellow,
+   -1px 1px 20px LightYellow,
+    1px 1px 20px LightYellow;
+  mix-blend-mode: screen;	
+	
+}
+
+header img{
+  width: 15%;
+  position: absolute;
+  top: 68%;
+  left: 5%;
+  border-radius: 50%;
+  box-shadow:
+   -1px -1px 4px white,  
+    1px -1px 4px white,
+   -1px 1px 4px white,
+    1px 1px 4px white;
+}
+
+header p{
+  color: orange;
+  font-size:  2.4rem; 
+  margin-top: 32%; 
+  margin-right: 2%;
+  text-align: right;  
+  animation-name: blink_arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+	
+	
+@keyframes blink_arrow{
+    0% {color: orange;}
+  100% {color: yellow;}	
+	
+	
+}
+
+
+
+/* --------------------- SECTION --------------------- */
+section{
+  max-width: 1250px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: teal;  
+	
+	
+}
+
+/* --------------------- RESPONSIVE --------------------- */
+
+@media only screen and ( max-width: 600px){
+	
+  header{
+    background: url('assets/bg_moon_flower_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 60%;    	
+
+  }
+  .mix-blend{
+	margin-top: 55%;  
+    font-size: 2.2rem;  
+  }
+
+  header img{
+    width: 20%;
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    box-shadow:
+     -1px -1px 2px white,  
+      1px -1px 2px white, 
+     -1px 1px 2px white,
+      1px 1px 2px white;
+  }
+  
+  header p{
+    font-size:  2.4rem; 
+    margin-top: 78%; 
+    margin-right: 2%;
+
+  }    
+
+   
+
+  
+}
+
+
+
