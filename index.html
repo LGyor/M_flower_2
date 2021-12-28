@@ -7,12 +7,12 @@
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://kit.fontawesome.com/e41c3d2ad3.js" crossorigin="anonymous"></script>
 </head>
 
 
 
-<body>
+<body id="appBody">
   <header>
     <div class="mix-blend">Holdvirág Alapítvány</div>  
 	<img src="moon_flower_2.jpg" alt="Flower">
@@ -21,8 +21,118 @@
   </header>
 
   <section>
+    <div class="header" >
+	  <h2><span>Holdvirág</span> Alapítvány</h2>
+	</div>
+	
+	<div class="introduction">
+		<h2>Bemutatkozás</h2>
+		<p>A <span>Holdvirág Családsegítő és Életmód tanácsadó Alapítvány</span> In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+		    Scroll back up to remove the stickyness.
+			Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+			In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+		</p> 
+	</div>	
+	<div class="activities">	
+	
+	  <div class="family">
+	        <div class="image">
+	          <img src="family_640.jpg" alt="family">
+			</div>
+			<h3>Család</h3>
+	  		<p>A Holdvirág Családsegítő és Életmód tanácsadó Alapítvány In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+		    Scroll back up to remove the stickyness
+			<a href="">részletek...</a>
+		</p>  
+	  </div>
+	  
+	  <div class="body">
+	        <div class="image">
+	          <img src="body_640.jpg" alt="body">
+			</div>	  
+			<h3>Test</h3>	  
+	  		<p>A Holdvirág Családsegítő és Életmód tanácsadó Alapítvány In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+		    Scroll back up to remove the stickyness.
+			<a href="">részletek...</a>
+			
+		    </p>  
+	  </div>
+	  
+	  <div class="soul">
+	        <div class="image">
+	          <img src="soul_640.jpg" alt="soul">
+			</div>	  
+			<h3>Lélek</h3>	  
+	  			<p>A Holdvirág Családsegítő és Életmód tanácsadó Alapítvány In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+		    Scroll back up to remove the stickyness.
+			<a href="">részletek...</a>
+		    </p>      
+	  </div>
+	  
+	  <div class="health">
+	        <div class="image">
+	          <img src="health_640.jpg" alt="health">
+			</div>	  
+			<h3>Egészség</h3>	  
+	  			<p>A Holdvirág Családsegítő és Életmód tanácsadó Alapítvány In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+		    Scroll back up to remove the stickyness.
+			<a href="">részletek...</a>
+		    </p>  
+	  </div>	  
+	
+	</div>
+
+
+	
+  </section >
   
+  <footer id="sec">
+    <p><a href="#contact" onclick="disableBodyScroll()">Elérhetőségek</a></p>
   
-  </section>
+  </footer>
+  
+
+<!--  ********* CONTACT WINDOW  ********* -->  
+
+    <div id="contact" class="contact_background">
+	
+      <div class="contact_modal">
+	    <div class="header_modal">
+		  <h3>Elérhetőségek</h3>
+		
+		</div>
+		<div class="content_modal">
+		  <h3>Holdvirág Családsegítő és Életmód tanácsadó Alapítvány</h3>		
+		  <p><i class="fas fa-envelope"></i> 2314 Halásztelek, Új u. 6. fszt/1.</p>
+		  <p><i class="fas fa-mobile-alt"></i> +36 70 123 4567</p>
+		  <p>Adószám: 19294870113</p>	
+		  <p>
+		    <i class="fab fa-facebook">&ensp; &ensp;</i>
+		    <i class="fab fa-twitter">&ensp; &ensp;</i>
+		    <i class="fab fa-instagram">&ensp; &ensp;</i>
+		    <i class="fab fa-youtube"></i>
+		  </p>		  
+		</div>
+
+		<div class="footer_modal">
+
+          <p><a href="#sec" onclick="enableBodyScroll()">Bezár</a></p>
+		</div>  
+
+      </div> 
+    </div>  
+<script>
+  
+	function disableBodyScroll(){
+	 const element = document.querySelector("#appBody");
+	 element.classList.add("stop-scroll");
+	}
+
+	function enableBodyScroll(){
+	 const element = document.querySelector("#appBody");
+	 element.classList.remove("stop-scroll");
+	}
+</script>   
+  
 </body>
 </html>
