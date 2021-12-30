@@ -8,6 +8,11 @@
   margin: 0;
   padding: 0;
 }
+
+html{
+	
+  font-size: 16px;	
+}
 body{
   background-color: cornsilk;	
   font-family: 'Roboto Slab', serif;
@@ -41,8 +46,8 @@ header{
     1px -1px 20px LightYellow,
    -1px 1px 20px LightYellow,
     1px 1px 20px LightYellow;
-  mix-blend-mode: screen;	
-	
+  mix-blend-mode: screen;
+
 }
 
 header img{
@@ -90,7 +95,7 @@ section{
 }
 
 .header h2{
-  font-size: 3rem;  
+  font-size: 2.4rem;  
   letter-spacing: 0.4rem;  
   color: #E4F132;
   text-align: center;
@@ -113,7 +118,7 @@ section{
 	
 }
 .introduction h2{
-  font-size: 1.4rem;  
+  font-size: 1.2rem;  
   letter-spacing: 0.2rem;  	
   text-transform: uppercase;
   text-decoration: underline;    
@@ -256,7 +261,7 @@ footer p a:hover{
   font-size: 2.2rem;
   letter-spacing: 0.2rem;
   text-align: center;
-  padding: 1.4rem 0;
+  padding: 1.1rem 0;
   color: #0A3408;  	
 }
 
@@ -280,15 +285,13 @@ footer p a:hover{
 
 .footer_modal{
   background-color: #98CA32; 	
-	
-	
 }
 
 .footer_modal p{
   color: #0A3408; 
   font-size: 1.8rem;
   text-align: center;
-  padding: 1.4rem 0;
+  padding: 1.1rem 0;
 }
 .footer_modal p a{
   text-decoration: none;
@@ -393,17 +396,18 @@ footer p a:hover{
 
 
 @media only screen and ( max-width: 600px){
-	
+  html{
+    font-size: 10px;		
+  }	
   header{
     background: url('bg_moon_flower_640.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 60%;    	
-
   }
+  
   .mix-blend{
 	margin-top: 50%;  
-    font-size: 2.2rem;  
   }
 
   header img{
@@ -420,75 +424,21 @@ footer p a:hover{
   
   header p{
     font-size:  2.4rem; 
-    /*margin-top: 56%; 
-    margin-right: 2%;*/
 	top: 74%;
 
   }    
-  .header h2{
-    font-size: 1.2rem;  
-	padding: 0.8rem 0;
-		
+  .activities{
+    display: flex;	
+	flex-direction: column;
   }
 
-	.introduction h2{
-	  font-size: 0.9rem;  
-	  letter-spacing: 0.1rem;  	
-	 
-		
-	}
-	
-    .activities{
-      display: flex;	
-	  flex-direction: column;
-    }
+  .family, .body, .soul, .health{
+     width: 100%;
+  }
+  .contact_modal{
+    width: 88%;
+  }
 
-    .family, .body, .soul, .health{
-      width: 100%;
-
-    }
-
-	.introduction p{
-	  font-size: 0.7rem; 
-		
-	}
-
-	.family h3, .body h3, .soul h3, .health h3{
-	  font-size: 0.8rem;	
-	  letter-spacing: 0.1rem;
-
-	  
-	}
-
-	.family p, .body p, .soul p, .health p{
-	  font-size: 0.6rem;
-      padding-bottom: 0.4rem;	  
-	}
-
-    footer p{
-      font-size: 1.2rem;
-      letter-spacing: 0.2rem;
-    }
-
-    .contact_modal{
-      width: 88%;
-	}
-
-    .header_modal h3{
-      font-size: 1.8rem;
-    }
-    .content_modal h3{
-      font-size: 1.2rem; 
-    }
-	
-    .content_modal p{
-      font-size: 0.9rem;
-    }
-
-
-    .footer_modal p{
-      font-size: 1.4rem;
-    }
   
 }/*max-width: 600px*/
 
@@ -497,6 +447,9 @@ footer p a:hover{
 
 
 @media only screen and (max-height:420px) and (orientation: landscape) {
+    html{
+	  font-size: 11px;		
+	}
 	header{
 	  background: url('bg_moon_flower_640.jpg');
 	  background-repeat: no-repeat;
@@ -504,50 +457,22 @@ footer p a:hover{
 	  background-position: 100% 45%;
 	  border: 1px solid #200a00;
 	}
-	
 	.mix-blend{
 	  width: 80%;	
 	  margin: 12% auto 0 auto;
-	  font-size: 2.0rem;  
 	  text-align: center;
-	  letter-spacing: 0.4rem;
 	}
 	header img{
 	  width: 12%;
 	  top: 60%;
 	  left: 5%;
-
 	}	
 	header p{
-	  font-size:  2.4rem; 
-	  /*margin-top: 24%; 
-	  margin-right: 2%;*/
 	  top: 64%;
 	}
-	
     .contact_modal{
       width: 68%;
     }	
-    .header_modal h3{
-      font-size: 1.4rem;
-      padding: 0.6rem 0;
-    }
-    .content_modal h3{
-      font-size: 1.2rem; 
-      padding: 0.6rem 0;  
-	}
-	
-    .content_modal p{
-      font-size: 0.8rem;
-      padding-bottom: 0.6rem;  
-	}
-
-    .footer_modal p{
-      font-size: 1.2rem;
-      padding: 0.6rem 0;
-    }
-
-	
 }
 
 
