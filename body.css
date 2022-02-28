@@ -17,27 +17,60 @@ body{
 
 }
 
+.jumptop_button_style{
+  width: 3.125rem;
+  height: 3.125rem;
+  text-align: center;
+  line-height: 3.125rem;  
+  position: fixed;
+  right: 1.4%;
+  bottom: 6%;
+  z-index: 1;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0); 
+  color: rgba(255, 255, 255, 0); 
+  font-size: 2rem; 
+  cursor: default;  
+}
+
+.showup{
+  visibility: visible;
+  background-color: #0A3409; 
+  color: #F5F7D4; 
+  border-radius: 50%;
+  opacity: 0.6; 
+  transition: background-color 2s ease, color 2s ease;
+}
+ 
+
+
 /* --------------------- HEADER --------------------- */
 
 header{
-  position: relative;	
+  position: relative;
   max-width: 1250px;
   margin: 0 auto;
   background-color: #F5F7D4;  	
 }
+
 .home_page{
+  display: inline;	
   position: absolute;
-  right: 8%;
+  right: 3%;
   top: 50%;
   transform: translate(0%, -50%);
-  font-size: 2rem;
-}
-.material-icons{
-  color: yellow;
-  font-size: 20px;  
-	
+
 }
 
+.material-icons.md-36 { 
+  font-size: 2.5rem;
+  color: #0A3408;
+  padding: 1rem 0;
+}
+
+.material-icons.md-36:hover { 
+  color: #E4F132;
+}
 
 
 header h2{
@@ -99,6 +132,7 @@ section h2{
   background-color: cornsilk; 
   border: 2px solid #0A3409;  
   border-radius: .6rem 1.6rem ;
+  box-shadow: 0 0 1px #0A3409, 0 0 4px #0A3409, 0 0 14px #0A3409;
   color: #0A3409;  
 }
 .trainers_text h3{
@@ -196,6 +230,7 @@ section h2{
 }
 
 /* --------------------- RESPONSIVE --------------------- */
+
 @media only screen and ( max-width: 992px){
 	html{
 	  font-size: 14px;  
@@ -221,11 +256,10 @@ section h2{
 	
 }/*max-width: 992px*/
 
-@media only screen (max-width: 768px){
-  html{
-	  font-size: 10px;  
-	  
-  }	
+@media  ( max-width: 768px){
+	html{
+	  font-size: 12px;  
+	}
 	
 	
 }/*max-width: 768px*/ 
@@ -235,12 +269,13 @@ section h2{
   html{
 	  font-size: 9px;  
 	  
-  }    	
-.csikung_content img{
-  width: 50%;
-  height: 50%;  
+  } 
+  
+ .csikung_content img{
+    width: 50%;
+    height: 50%;  
 
-}	
+  }	
 	
 }/*max-width: 600px*/
 
